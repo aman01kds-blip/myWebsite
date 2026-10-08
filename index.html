@@ -1,36 +1,235 @@
-<DOCTYPE html>
-  <html>
-   <head>
-     <title>myWebsite</title>
-       </head>
-   <body>
-     <h2>Digital Literacy class</h2>
-     Aman Kadasae
-     <p>Topic</p>
-     <p style="color:red">The style is attribute of paragraph tag</p>
-     <span>The element contains tag, attribute and content</span>   
-     <table border=1>
-       <tr>
-         <th>company</th>
-         <th>contact</th>
-         <th>country</th>
-       </tr>
-       <tr>
-         <td>Alfreds Futterkiste</td>
-         <td>Maria Anders</td>
-         <td>Germany</td>
-       </tr>
-     </table>
-     <!--show picture-->
-     <img src="IMG_5399.MOV" alt="picture" width="400" height=400">
-     <br><br>
-     <a href="Food_order.html">Open Food Order Page</a>
-   <br><br><br>
-     <a href="sendemail.html">Test sending our message to our email</a> 
-   <br><br><br>
-     <p style="text-align: center; color: blue;">My food Order Project.</p>
-     <br>
-     <br>
-     <a href="sendorderemail.html">My Food order Page</a>
-   </body>   
-  </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>myWebsite</title>
+
+    <!-- เพิ่ม CSS สำหรับตกแต่งเว็บไซต์ -->
+    <style>
+
+        /* พื้นฐานของเว็บไซต์ */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f2fe, #f5f3ff);
+            color: #333;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* หัวข้อ */
+        h2 {
+            color: #2563eb;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        /* ชื่อ Aman */
+        body > html {
+            text-align: center;
+        }
+
+        /* Paragraph */
+        p {
+            font-size: 17px;
+        }
+
+        /* กล่องเนื้อหา */
+        p[style*="color:red"] {
+            background-color: #fee2e2;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid red;
+            font-weight: bold;
+        }
+
+        /* Span */
+        span {
+            display: block;
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        /* ตาราง */
+        table {
+            width: 80%;
+            margin: 25px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #2563eb;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #dbeafe;
+        }
+
+        /* รูปภาพ */
+        img {
+            display: block;
+            margin: 25px auto;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Link */
+        a {
+            display: block;
+            width: 300px;
+            margin: 15px auto;
+            padding: 14px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(37,99,235,0.25);
+        }
+
+        /* เมื่อเอาเมาส์ไปวางบน Link */
+        a:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+            box-shadow: 0 8px 18px rgba(37,99,235,0.35);
+        }
+
+        /* หัวข้อ Food Order */
+        p[style*="text-align: center"] {
+            background-color: white;
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        /* รองรับมือถือ */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            table {
+                width: 100%;
+                font-size: 13px;
+            }
+
+            th,
+            td {
+                padding: 8px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            a {
+                width: 90%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Digital Literacy class</h2>
+
+    Aman Kadasae
+
+    <p>Topic</p>
+
+    <p style="color:red">
+        The style is attribute of paragraph tag
+    </p>
+
+    <span>
+        The element contains tag, attribute and content
+    </span>
+
+    <table border=1>
+
+        <tr>
+            <th>company</th>
+            <th>contact</th>
+            <th>country</th>
+        </tr>
+
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+
+    </table>
+
+    <!--show picture-->
+
+    <img src="IMG_5399.MOV"
+         alt="picture"
+         width="400"
+         height="400">
+
+    <br><br>
+
+    <a href="Food_order.html">
+        Open Food Order Page
+    </a>
+
+    <br><br><br>
+
+    <a href="sendemail.html">
+        Test sending our message to our email
+    </a>
+
+    <br><br><br>
+
+    <p style="text-align: center; color: blue;">
+        My food Order Project.
+    </p>
+
+    <br>
+    <br>
+
+    <a href="sendorderemail.html">
+        My Food order Page
+    </a>
+
+</body>
+
+</html>
